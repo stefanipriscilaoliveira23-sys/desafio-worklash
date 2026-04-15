@@ -11,7 +11,6 @@
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;background:var(--bk);color:var(--w);min-height:100vh}
 .screen{display:none;min-height:100vh}.screen.active{display:block}
-/* LOGIN */
 .lw{max-width:420px;margin:0 auto;padding:60px 24px}
 .ll{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:4px;color:var(--gld);text-align:center;margin-bottom:4px}
 .ls{font-size:10px;color:var(--g);letter-spacing:2px;text-transform:uppercase;text-align:center;margin-bottom:40px}
@@ -26,8 +25,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--bk);color:var(--w);min-he
 .fld input:focus{border-color:var(--gld)}
 .btn-p{width:100%;background:var(--gld);color:var(--bk);border:none;padding:13px;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:3px;border-radius:3px;cursor:pointer;transition:background .2s;margin-top:4px}
 .btn-p:hover{background:var(--gldt)}
+.btn-p:disabled{opacity:.6;cursor:default}
 .err-b{background:var(--rdd);border:1px solid rgba(224,82,82,.3);border-radius:4px;padding:10px 14px;font-size:13px;color:var(--rd);margin-bottom:12px;display:none}
-/* HEADER */
 .ahdr{background:var(--bk2);border-bottom:1px solid var(--br);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100}
 .alo{font-family:'Bebas Neue',sans-serif;font-size:19px;letter-spacing:3px;color:var(--gld)}
 .au{font-size:12px;color:var(--g);display:flex;align-items:center;gap:12px}
@@ -37,13 +36,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bk);color:var(--w);min-he
 .pl{font-size:10px;color:var(--g);display:flex;justify-content:space-between;margin-bottom:5px}
 .pt{height:3px;background:var(--br);border-radius:2px;overflow:hidden}
 .pf{height:100%;background:linear-gradient(90deg,var(--gld),var(--gldt));border-radius:2px;transition:width .5s}
-/* HERO */
 .hero{padding:40px 20px 28px;text-align:center}
 .ey{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;color:var(--gld);text-transform:uppercase;margin-bottom:14px}
 .ht{font-family:'Bebas Neue',sans-serif;font-size:clamp(44px,10vw,76px);letter-spacing:4px;line-height:.88;margin-bottom:14px}
 .ht span{color:var(--gld)}
 .hd{font-size:14px;color:var(--gl);max-width:440px;margin:0 auto 32px;line-height:1.65}
-/* CALC */
 .cw{max-width:580px;margin:0 auto 36px;background:var(--bk4);border:1px solid var(--br2);border-radius:6px;overflow:hidden}
 .ch{background:var(--gldd);border-bottom:1px solid rgba(201,168,76,.2);padding:12px 18px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gld)}
 .cb{padding:20px}
@@ -61,7 +58,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--bk);color:var(--w);min-he
 .rd-{font-size:10px;color:var(--g);margin-top:4px;line-height:1.4}
 .cn{background:var(--gldd);border:1px solid rgba(201,168,76,.2);border-radius:4px;padding:11px 14px;font-size:12px;color:var(--gl);margin-top:10px;line-height:1.55}
 .cn strong{color:var(--gld)}
-/* DAYS */
 .dw{padding:0 20px 60px;max-width:800px;margin:0 auto}
 .slb{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:3px;color:var(--g);text-transform:uppercase;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--br)}
 .dc{border:1px solid var(--br);margin-bottom:8px;border-radius:5px;overflow:hidden;transition:border-color .2s}
@@ -74,7 +70,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--bk);color:var(--w);min-he
 .dc.open .dchev{transform:rotate(180deg)}
 .dbd{display:none;padding:0 20px 22px;border-top:1px solid var(--br)}
 .dc.open .dbd{display:block}
-/* CONTENT */
 .blk{margin-top:18px}
 .btt{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gld);margin-bottom:8px;display:flex;align-items:center;gap:6px}
 .btt::after{content:'';flex:1;height:1px;background:var(--br)}
@@ -125,10 +120,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--bk);color:var(--w);min-he
 .bcmp:hover{background:var(--gldt)}.bcmp:disabled{background:var(--grn);cursor:default}
 .lkn{padding:16px 20px;display:flex;align-items:center;gap:10px;font-size:12px;color:var(--g)}
 .g8{height:8px}.g12{height:12px}
-/* ADMIN */
 .aw{padding:20px;max-width:900px;margin:0 auto}
 .at{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:3px;color:var(--gld);margin-bottom:4px}
-.as{font-size:12px;color:var(--g);margin-bottom:24px}
+.as_{font-size:12px;color:var(--g);margin-bottom:24px}
 .sg2{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:24px}
 .stat{background:var(--bk4);border:1px solid var(--br);border-radius:5px;padding:16px}
 .sv{font-family:'Bebas Neue',sans-serif;font-size:36px;color:var(--gld);line-height:1}
@@ -146,19 +140,25 @@ body{font-family:'DM Sans',sans-serif;background:var(--bk);color:var(--w);min-he
 .aref{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--g);background:none;border:1px solid var(--br2);padding:5px 12px;border-radius:2px;cursor:pointer;transition:all .2s;margin-bottom:20px}
 .aref:hover{border-color:var(--gld);color:var(--gld)}
 .ea{text-align:center;padding:48px 20px;color:var(--g);font-size:13px}
+.loading{text-align:center;padding:60px 20px;color:var(--g);font-size:13px;font-family:'DM Mono',monospace;letter-spacing:2px}
 @media(max-width:540px){.cr{grid-template-columns:1fr}.crs{grid-template-columns:1fr 1fr}.is{flex-wrap:wrap}.sg{grid-template-columns:1fr 1fr}.ph{display:none}.sg2{grid-template-columns:1fr 1fr}}
 ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:var(--bk2)}::-webkit-scrollbar-thumb{background:var(--br2);border-radius:3px}
 </style>
 </head>
 <body>
 
+<!-- LOADING -->
+<div class="screen active" id="s-loading">
+  <div class="loading">Carregando...</div>
+</div>
+
 <!-- LOGIN -->
-<div class="screen active" id="s-login">
+<div class="screen" id="s-login">
 <div class="lw">
 <div class="ll">WORKLASH</div>
 <div class="ls">Desafio 7 Dias · Caixa Rápido</div>
 <div class="lt">Bem-vinda ao Desafio</div>
-<div class="ld">Cadastre-se para salvar seu progresso.<br>Nas próximas visitas, entre com seu telefone.</div>
+<div class="ld">Cadastre-se para salvar seu progresso em qualquer dispositivo.<br>Nas próximas visitas, entre com seu telefone.</div>
 <div class="tabs">
   <div class="tab active" onclick="setTab('reg')">Primeiro acesso</div>
   <div class="tab" onclick="setTab('login')">Já tenho conta</div>
@@ -168,11 +168,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--bk);color:var(--w);min-he
 <div id="form-reg">
   <div class="fld"><label>Nome completo</label><input id="r-name" type="text" placeholder="Ex: Ana Paula Silva" /></div>
   <div class="fld"><label>WhatsApp (somente números)</label><input id="r-phone" type="tel" placeholder="Ex: 11999990000" /></div>
-  <button class="btn-p" onclick="doReg()">CRIAR MINHA CONTA</button>
+  <button class="btn-p" id="btn-reg" onclick="doReg()">CRIAR MINHA CONTA</button>
 </div>
 <div id="form-login" style="display:none">
-  <div class="fld"><label>WhatsApp (somente números)</label><input id="l-phone" type="tel" placeholder="Ex: 11999990000" /></div>
-  <button class="btn-p" onclick="doLogin()">ENTRAR</button>
+  <div class="fld"><label>WhatsApp (somente números)</label><input id="l-phone" type="tel" placeholder="Ex: 11999990000" onkeydown="if(event.key==='Enter')doLogin()" /></div>
+  <button class="btn-p" id="btn-login" onclick="doLogin()">ENTRAR</button>
 </div>
 <div id="form-admin" style="display:none">
   <div class="fld"><label>Senha admin</label><input id="a-pass" type="password" placeholder="Senha" onkeydown="if(event.key==='Enter')doAdmin()" /></div>
@@ -205,7 +205,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--bk);color:var(--w);min-he
         <div class="cri"><span class="rv" id="r-s">35–42</span><div class="rd-">leads na semana</div></div>
         <div class="cri hl"><span class="rv g" id="r-f">R$5.250</span><div class="rd-">previsão de faturamento</div></div>
       </div>
-      <div class="cn" id="cn">Com R$11/dia chegam em média 5 a 6 leads/dia. Em 7 dias: ~35 leads. Com 10% de conversão: 3 a 4 vendas.</div>
+      <div class="cn" id="cn">Com R$11/dia chegam em média 5 a 6 leads/dia.</div>
     </div>
   </div>
 </div>
@@ -221,17 +221,28 @@ body{font-family:'DM Sans',sans-serif;background:var(--bk);color:var(--w);min-he
 </div>
 <div class="aw">
   <div class="at">Painel de Acompanhamento</div>
-  <div class="as">Progresso de todas as alunas no Desafio 7 Dias</div>
+  <div class="as_">Progresso de todas as alunas no Desafio 7 Dias</div>
   <button class="aref" onclick="renderAdmin()">↻ ATUALIZAR</button>
   <div class="sg2" id="a-stats"></div>
   <div style="overflow-x:auto" id="a-table"></div>
 </div>
 </div>
 
+<!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
 <script>
-const ADMIN_PASS='worklash2025';
-const STORE_KEY='wl_users_v1';
-const DM=[
+// ── FIREBASE CONFIG ──────────────────────────────────────────
+const firebaseConfig = {
+  databaseURL: "https://worklash-desafio-default-rtdb.firebaseio.com"
+};
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+// ── CONSTANTS ─────────────────────────────────────────────────
+const ADMIN_PASS = 'worklash2025';
+const DM = [
   {id:'d0',badge:'DIA 0',name:'Pré-Requisito: Aula de Vendas',tag:'Obrigatório antes de qualquer ação'},
   {id:'d1',badge:'DIA 1',name:'Produção: Toda a Munição Escrita',tag:'Copies, scripts e roteiros prontos antes de executar'},
   {id:'d2',badge:'DIA 2',name:'Reativação de Leads Frios + Post',tag:'🔥🔥 Funil mais quente — custo zero, maior conversão'},
@@ -241,146 +252,197 @@ const DM=[
   {id:'d6',badge:'DIA 6',name:'Live no Instagram',tag:'🌡️ Autoridade + CTA no chat'},
   {id:'d7',badge:'DIA 7',name:'Segunda Sequência + Post de Fechamento',tag:'❄️ Última ativação da semana'},
 ];
-let CU=null;
+let CU = null; // current user object
 
-/* STORAGE HELPERS */
-function getUsers(){try{return JSON.parse(localStorage.getItem(STORE_KEY))||{};}catch(e){return{};}}
-function saveUsers(u){localStorage.setItem(STORE_KEY,JSON.stringify(u));}
-function getUser(phone){return getUsers()[phone]||null;}
-function saveUser(u){const all=getUsers();all[u.phone]=u;saveUsers(all);}
-
-/* UTILS */
-function show(id){['s-login','s-app','s-admin'].forEach(s=>document.getElementById(s).classList.remove('active'));document.getElementById(id).classList.add('active');}
-function showErr(m){const e=document.getElementById('err');e.textContent=m;e.style.display='block';}
-function hideErr(){document.getElementById('err').style.display='none';}
-function setTab(t){hideErr();['reg','login','admin'].forEach(x=>document.getElementById('form-'+x).style.display='none');document.getElementById('form-'+t).style.display='block';document.querySelectorAll('.tab').forEach((el,i)=>{el.classList.toggle('active',['reg','login','admin'][i]===t);});}
-
-/* AUTH */
-function doReg(){
+// ── SCREEN ────────────────────────────────────────────────────
+function show(id) {
+  ['s-loading','s-login','s-app','s-admin'].forEach(s => {
+    document.getElementById(s).classList.remove('active');
+  });
+  document.getElementById(id).classList.add('active');
+}
+function showErr(m) { const e=document.getElementById('err'); e.textContent=m; e.style.display='block'; }
+function hideErr() { document.getElementById('err').style.display='none'; }
+function setTab(t) {
   hideErr();
-  const name=(document.getElementById('r-name').value||'').trim();
-  const phone=(document.getElementById('r-phone').value||'').replace(/\D/g,'').trim();
-  if(!name){showErr('Por favor, informe seu nome completo.');return;}
-  if(phone.length<10){showErr('Informe um WhatsApp válido (somente números).');return;}
-  if(getUser(phone)){showErr('Este número já tem uma conta. Use a aba "Já tenho conta".');return;}
-  const u={name,phone,registered:new Date().toISOString(),lastAccess:new Date().toISOString(),completed:[]};
-  saveUser(u);CU=u;enterApp();
-}
-function doLogin(){
-  hideErr();
-  const phone=(document.getElementById('l-phone').value||'').replace(/\D/g,'').trim();
-  if(phone.length<10){showErr('Informe um WhatsApp válido.');return;}
-  const u=getUser(phone);
-  if(!u){showErr('Número não encontrado. Faça seu cadastro na aba "Primeiro acesso".');return;}
-  u.lastAccess=new Date().toISOString();saveUser(u);CU=u;enterApp();
-}
-function doAdmin(){
-  hideErr();
-  if(document.getElementById('a-pass').value!==ADMIN_PASS){showErr('Senha incorreta.');return;}
-  show('s-admin');renderAdmin();
-}
-function doLogout(){
-  CU=null;
-  ['r-name','r-phone','l-phone','a-pass'].forEach(id=>{const el=document.getElementById(id);if(el)el.value='';});
-  setTab('reg');show('s-login');
-}
-function enterApp(){
-  document.getElementById('u-disp').textContent=CU.name.split(' ')[0];
-  show('s-app');calcular();renderDays();
+  ['reg','login','admin'].forEach(x => document.getElementById('form-'+x).style.display='none');
+  document.getElementById('form-'+t).style.display='block';
+  document.querySelectorAll('.tab').forEach((el,i) => el.classList.toggle('active', ['reg','login','admin'][i]===t));
 }
 
-/* COMPLETE DAY */
-function completeDay(id){
-  if(!CU||CU.completed.includes(id))return;
+// ── AUTH ──────────────────────────────────────────────────────
+async function doReg() {
+  hideErr();
+  const name = (document.getElementById('r-name').value||'').trim();
+  const phone = (document.getElementById('r-phone').value||'').replace(/\D/g,'').trim();
+  if (!name) { showErr('Por favor, informe seu nome completo.'); return; }
+  if (phone.length < 10) { showErr('Informe um WhatsApp válido (somente números).'); return; }
+  const btn = document.getElementById('btn-reg');
+  btn.disabled = true; btn.textContent = 'AGUARDE...';
+  try {
+    const snap = await db.ref('users/' + phone).get();
+    if (snap.exists()) { showErr('Este número já tem uma conta. Use "Já tenho conta".'); btn.disabled=false; btn.textContent='CRIAR MINHA CONTA'; return; }
+    const u = { name, phone, registered: new Date().toISOString(), lastAccess: new Date().toISOString(), completed: [] };
+    await db.ref('users/' + phone).set(u);
+    CU = u; enterApp();
+  } catch(e) { showErr('Erro ao criar conta. Tente novamente.'); btn.disabled=false; btn.textContent='CRIAR MINHA CONTA'; }
+}
+
+async function doLogin() {
+  hideErr();
+  const phone = (document.getElementById('l-phone').value||'').replace(/\D/g,'').trim();
+  if (phone.length < 10) { showErr('Informe um WhatsApp válido.'); return; }
+  const btn = document.getElementById('btn-login');
+  btn.disabled = true; btn.textContent = 'AGUARDE...';
+  try {
+    const snap = await db.ref('users/' + phone).get();
+    if (!snap.exists()) { showErr('Número não encontrado. Faça seu cadastro em "Primeiro acesso".'); btn.disabled=false; btn.textContent='ENTRAR'; return; }
+    CU = snap.val();
+    if (!CU.completed) CU.completed = [];
+    await db.ref('users/' + phone + '/lastAccess').set(new Date().toISOString());
+    enterApp();
+  } catch(e) { showErr('Erro ao entrar. Tente novamente.'); btn.disabled=false; btn.textContent='ENTRAR'; }
+}
+
+function doAdmin() {
+  hideErr();
+  if (document.getElementById('a-pass').value !== ADMIN_PASS) { showErr('Senha incorreta.'); return; }
+  show('s-admin'); renderAdmin();
+}
+
+function doLogout() {
+  CU = null;
+  ['r-name','r-phone','l-phone','a-pass'].forEach(id => { const el=document.getElementById(id); if(el) el.value=''; });
+  document.getElementById('btn-reg').disabled=false; document.getElementById('btn-reg').textContent='CRIAR MINHA CONTA';
+  document.getElementById('btn-login').disabled=false; document.getElementById('btn-login').textContent='ENTRAR';
+  setTab('reg'); show('s-login');
+}
+
+function enterApp() {
+  document.getElementById('u-disp').textContent = CU.name.split(' ')[0];
+  show('s-app'); calcular(); renderDays();
+}
+
+// ── COMPLETE DAY ──────────────────────────────────────────────
+async function completeDay(id) {
+  if (!CU || CU.completed.includes(id)) return;
   CU.completed.push(id);
-  CU.lastAccess=new Date().toISOString();
-  saveUser(CU);renderDays();
-  const idx=DM.findIndex(d=>d.id===id);
-  if(idx<DM.length-1)setTimeout(()=>{const nc=document.getElementById('dc-'+DM[idx+1].id);if(nc){nc.classList.add('open');nc.scrollIntoView({behavior:'smooth',block:'start'});}},350);
+  CU.lastAccess = new Date().toISOString();
+  try {
+    await db.ref('users/' + CU.phone).update({ completed: CU.completed, lastAccess: CU.lastAccess });
+  } catch(e) { console.error('Erro ao salvar progresso:', e); }
+  renderDays();
+  const idx = DM.findIndex(d => d.id === id);
+  if (idx < DM.length - 1) {
+    setTimeout(() => {
+      const nc = document.getElementById('dc-' + DM[idx+1].id);
+      if (nc) { nc.classList.add('open'); nc.scrollIntoView({behavior:'smooth',block:'start'}); }
+    }, 350);
+  }
 }
 
-/* RENDER DAYS */
-function iul(i){return i===0||(CU&&CU.completed.includes(DM[i-1].id));}
-function icd(id){return CU&&CU.completed.includes(id);}
-function renderDays(){
-  const done=CU?CU.completed.length:0;
-  document.getElementById('plbl').textContent=done+'/8';
-  document.getElementById('pfill').style.width=(done/8*100)+'%';
-  const c=document.getElementById('days-c');c.innerHTML='';
-  DM.forEach((d,i)=>{
-    const ul=iul(i),cd=icd(d.id),ac=ul&&!cd;
-    let cls='lk';if(cd)cls='dn';else if(ac)cls='ac';else if(ul)cls='ul';
-    let bc='bl_';if(cd)bc='bd_';else if(ul)bc='ba_';
-    const el=document.createElement('div');
-    el.className='dc '+cls;el.id='dc-'+d.id;
-    el.innerHTML=`<div class="dh" onclick="toggleDay('${d.id}',${ul})">
+// ── RENDER DAYS ───────────────────────────────────────────────
+function iul(i) { return i===0 || (CU && CU.completed.includes(DM[i-1].id)); }
+function icd(id) { return CU && CU.completed.includes(id); }
+
+function renderDays() {
+  const done = CU ? CU.completed.length : 0;
+  document.getElementById('plbl').textContent = done + '/8';
+  document.getElementById('pfill').style.width = (done/8*100) + '%';
+  const c = document.getElementById('days-c'); c.innerHTML = '';
+  DM.forEach((d,i) => {
+    const ul=iul(i), cd=icd(d.id), ac=ul&&!cd;
+    let cls='lk'; if(cd)cls='dn'; else if(ac)cls='ac'; else if(ul)cls='ul';
+    let bc='bl_'; if(cd)bc='bd_'; else if(ul)bc='ba_';
+    const el = document.createElement('div');
+    el.className = 'dc ' + cls; el.id = 'dc-' + d.id;
+    el.innerHTML = `<div class="dh" onclick="toggleDay('${d.id}',${ul})">
 <div class="db_ ${bc}">${cd?'✓ ':''}${d.badge}</div>
 <div class="dm"><div class="dn_">${d.name}</div><div class="dt">${d.tag}</div></div>
-${ul?'<div class="dchev">▾</div>':'<div style="color:var(--g);font-size:14px">🔒</div>'}
+${ul ? '<div class="dchev">▾</div>' : '<div style="color:var(--g);font-size:14px">🔒</div>'}
 </div>
-${ul?`<div class="dbd" id="db-${d.id}">${buildDay(i)}<div class="bcw"><button class="bcmp" onclick="completeDay('${d.id}')" ${cd?'disabled':''}>${cd?'✓ CONCLUÍDO':'MARCAR COMO CONCLUÍDO'}</button></div></div>`:'<div class="lkn">🔒  Complete o dia anterior para desbloquear</div>'}`;
+${ul ? `<div class="dbd" id="db-${d.id}">${buildDay(i)}<div class="bcw"><button class="bcmp" onclick="completeDay('${d.id}')" ${cd?'disabled':''}>${cd?'✓ CONCLUÍDO':'MARCAR COMO CONCLUÍDO'}</button></div></div>` : '<div class="lkn">🔒  Complete o dia anterior para desbloquear</div>'}`;
     c.appendChild(el);
   });
 }
-function toggleDay(id,ul){if(!ul)return;document.getElementById('dc-'+id).classList.toggle('open');}
+function toggleDay(id, ul) { if(!ul) return; document.getElementById('dc-'+id).classList.toggle('open'); }
 
-/* ADMIN */
-function renderAdmin(){
-  const all=getUsers();
-  const users=Object.values(all).sort((a,b)=>new Date(b.lastAccess)-new Date(a.lastAccess));
-  if(!users.length){document.getElementById('a-stats').innerHTML='';document.getElementById('a-table').innerHTML='<div class="ea">Nenhuma aluna cadastrada ainda.</div>';return;}
-  const total=users.length;
-  const fin=users.filter(u=>u.completed.length===8).length;
-  const inp=users.filter(u=>u.completed.length>0&&u.completed.length<8).length;
-  const ns=users.filter(u=>u.completed.length===0).length;
-  const avg=Math.round(users.reduce((s,u)=>s+u.completed.length,0)/total);
-  document.getElementById('a-stats').innerHTML=`
+// ── ADMIN ─────────────────────────────────────────────────────
+async function renderAdmin() {
+  document.getElementById('a-stats').innerHTML = '<div class="stat"><div class="sv">...</div><div class="sl">Carregando</div></div>';
+  document.getElementById('a-table').innerHTML = '';
+  try {
+    const snap = await db.ref('users').get();
+    if (!snap.exists()) {
+      document.getElementById('a-stats').innerHTML = '';
+      document.getElementById('a-table').innerHTML = '<div class="ea">Nenhuma aluna cadastrada ainda.</div>';
+      return;
+    }
+    const users = Object.values(snap.val()).map(u => { if(!u.completed) u.completed=[]; return u; });
+    users.sort((a,b) => new Date(b.lastAccess) - new Date(a.lastAccess));
+    const total = users.length;
+    const fin = users.filter(u => u.completed.length===8).length;
+    const inp = users.filter(u => u.completed.length>0 && u.completed.length<8).length;
+    const ns = users.filter(u => u.completed.length===0).length;
+    const avg = Math.round(users.reduce((s,u) => s+u.completed.length, 0) / total);
+    document.getElementById('a-stats').innerHTML = `
 <div class="stat"><div class="sv">${total}</div><div class="sl">Cadastradas</div></div>
 <div class="stat"><div class="sv" style="color:var(--grn)">${fin}</div><div class="sl">Concluíram</div></div>
 <div class="stat"><div class="sv" style="color:var(--gld)">${inp}</div><div class="sl">Em andamento</div></div>
 <div class="stat"><div class="sv" style="color:var(--g)">${ns}</div><div class="sl">Não iniciaram</div></div>
 <div class="stat"><div class="sv">${avg}</div><div class="sl">Dias médios</div></div>`;
-  const rows=users.map(u=>{
-    const pct=Math.round((u.completed.length/8)*100);
-    const stLbl=u.completed.length===8?'Concluído':u.completed.length===0?'Não iniciou':`Dia ${u.completed.length} de 8`;
-    const stCls=u.completed.length===8?'bst-d':u.completed.length===0?'bst-s':'bst-m';
-    const pills=DM.map(d=>{
-      const done=u.completed.includes(d.id);
-      const isCur=!done&&DM.findIndex(x=>x.id===d.id)===u.completed.length;
-      return `<span class="dp ${done?'dp-d':isCur?'dp-c':'dp-n'}">${d.badge.replace('DIA ','')}</span>`;
-    }).join('');
-    return `<tr>
+    const rows = users.map(u => {
+      const pct = Math.round((u.completed.length/8)*100);
+      const stLbl = u.completed.length===8 ? 'Concluído' : u.completed.length===0 ? 'Não iniciou' : `Dia ${u.completed.length} de 8`;
+      const stCls = u.completed.length===8 ? 'bst-d' : u.completed.length===0 ? 'bst-s' : 'bst-m';
+      const pills = DM.map(d => {
+        const done = u.completed.includes(d.id);
+        const isCur = !done && DM.findIndex(x=>x.id===d.id)===u.completed.length;
+        return `<span class="dp ${done?'dp-d':isCur?'dp-c':'dp-n'}">${d.badge.replace('DIA ','')}</span>`;
+      }).join('');
+      return `<tr>
 <td><strong style="color:var(--w)">${u.name}</strong><br><span style="font-family:'DM Mono',monospace;font-size:10px;color:var(--g)">${u.phone}</span></td>
 <td>${new Date(u.registered).toLocaleDateString('pt-BR')}</td>
 <td>${new Date(u.lastAccess).toLocaleDateString('pt-BR')}</td>
 <td><span class="bst ${stCls}">${stLbl}</span></td>
 <td><div style="display:flex;align-items:center;gap:8px"><div class="pb"><div class="pbf" style="width:${pct}%"></div></div><span style="font-size:10px;color:var(--g)">${pct}%</span></div></td>
 <td>${pills}</td>
-</tr>`;}).join('');
-  document.getElementById('a-table').innerHTML=`<table class="adm-t"><thead><tr><th>Aluna</th><th>Cadastro</th><th>Último acesso</th><th>Etapa</th><th>Progresso</th><th>Dias concluídos</th></tr></thead><tbody>${rows}</tbody></table>`;
+</tr>`;
+    }).join('');
+    document.getElementById('a-table').innerHTML = `<table class="adm-t"><thead><tr><th>Aluna</th><th>Cadastro</th><th>Último acesso</th><th>Etapa</th><th>Progresso</th><th>Dias concluídos</th></tr></thead><tbody>${rows}</tbody></table>`;
+  } catch(e) {
+    document.getElementById('a-stats').innerHTML = '';
+    document.getElementById('a-table').innerHTML = '<div class="ea">Erro ao carregar dados. Verifique as regras do Firebase.</div>';
+  }
 }
 
-/* CALC */
-function calcular(){
-  const inv=parseFloat(document.getElementById('inv').value)||11;
-  const tkt=parseFloat(document.getElementById('tkt').value)||1500;
-  const r=inv/11;
-  const lmin=Math.round(5*r),lmax=Math.round(6*r);
-  const lsmin=lmin*7,lsmax=lmax*7;
-  const vmin=Math.max(1,Math.round(lsmin*.1)),vmax=Math.max(1,Math.round(lsmax*.1));
-  document.getElementById('r-l').textContent=lmin+'–'+lmax;
-  document.getElementById('r-s').textContent=lsmin+'–'+lsmax;
-  document.getElementById('r-f').textContent='R$'+(vmin*tkt).toLocaleString('pt-BR')+'–'+(vmax*tkt).toLocaleString('pt-BR');
-  document.getElementById('cn').innerHTML='<strong>Com R$'+inv.toLocaleString('pt-BR')+'/dia</strong> — chegam em média '+lmin+' a '+lmax+' leads/dia. Em 7 dias: '+lsmin+'–'+lsmax+' leads. Com 10% de conversão: '+vmin+' a '+vmax+' vendas. Faturamento previsto: <strong>R$'+(vmin*tkt).toLocaleString('pt-BR')+' a R$'+(vmax*tkt).toLocaleString('pt-BR')+'</strong>.';
+// ── CALC ──────────────────────────────────────────────────────
+function calcular() {
+  const inv = parseFloat(document.getElementById('inv').value)||11;
+  const tkt = parseFloat(document.getElementById('tkt').value)||1500;
+  const r = inv/11;
+  const lmin=Math.round(5*r), lmax=Math.round(6*r);
+  const lsmin=lmin*7, lsmax=lmax*7;
+  const vmin=Math.max(1,Math.round(lsmin*.1)), vmax=Math.max(1,Math.round(lsmax*.1));
+  document.getElementById('r-l').textContent = lmin+'–'+lmax;
+  document.getElementById('r-s').textContent = lsmin+'–'+lsmax;
+  document.getElementById('r-f').textContent = 'R$'+(vmin*tkt).toLocaleString('pt-BR')+'–'+(vmax*tkt).toLocaleString('pt-BR');
+  document.getElementById('cn').innerHTML = '<strong>Com R$'+inv.toLocaleString('pt-BR')+'/dia</strong> — chegam em média '+lmin+' a '+lmax+' leads/dia. Em 7 dias: '+lsmin+'–'+lsmax+' leads. Com 10% de conversão: '+vmin+' a '+vmax+' vendas. Faturamento previsto: <strong>R$'+(vmin*tkt).toLocaleString('pt-BR')+' a R$'+(vmax*tkt).toLocaleString('pt-BR')+'</strong>.';
 }
 
-/* HELPERS */
-function tc(el){el.classList.toggle('ck');}
-function tfw(h){h.parentElement.classList.toggle('open');}
-function cpyS(btn){const t=btn.closest('.sc').querySelector('.stx');if(t)navigator.clipboard.writeText(t.textContent.trim()).then(()=>{btn.textContent='COPIADO!';btn.classList.add('ok');setTimeout(()=>{btn.textContent='COPIAR';btn.classList.remove('ok');},2000);});}
+// ── HELPERS ───────────────────────────────────────────────────
+function tc(el) { el.classList.toggle('ck'); }
+function tfw(h) { h.parentElement.classList.toggle('open'); }
+function cpyS(btn) {
+  const t = btn.closest('.sc').querySelector('.stx');
+  if(t) navigator.clipboard.writeText(t.textContent.trim()).then(() => {
+    btn.textContent='COPIADO!'; btn.classList.add('ok');
+    setTimeout(() => { btn.textContent='COPIAR'; btn.classList.remove('ok'); }, 2000);
+  });
+}
 
-/* DAY CONTENT BUILDERS */
-function buildDay(i){return [b0,b1,b2,b3,b4,b5,b6,b7][i]();}
+// ── DAY CONTENT ───────────────────────────────────────────────
+function buildDay(i) { return [b0,b1,b2,b3,b4,b5,b6,b7][i](); }
 
 function b0(){return`<div class="blk"><div class="btt">Objetivo</div><div class="ob"><strong>Antes de qualquer ação, você precisa dominar a conversa.</strong><br>Encher seu WhatsApp de leads sem saber conduzi-la é jogar oportunidade fora.</div></div>
 <div class="blk"><div class="btt">Acesse a Aula Agora</div><div class="tip"><strong>Assista completamente antes de avançar para o Dia 1.</strong> É nessa aula que você aprende o script de conexão que vai usar em todas as conversas desta semana.</div>
@@ -416,8 +478,7 @@ Para você que sonha em sair do CLT, conquistar mais liberdade e começar do zer
 
 [Opcional: De R$[X] por R$[Y] — Somente hoje ⚡]
 
-Responda esse story com a palavra [PALAVRA-CHAVE] para garantir sua vaga.</div></div>
-<div class="tip" style="margin-top:8px"><strong>Layout:</strong> Foto profissional + fundo escuro. Preço cheio riscado + oferta em destaque. CTA em cor chamativa.</div></div>
+Responda esse story com a palavra [PALAVRA-CHAVE] para garantir sua vaga.</div></div></div>
 <div class="blk"><div class="btt">Post do Feed — publica no Dia 2</div>
 <div class="sc"><div class="sc-lbl">Post 1 — Prova Social + Antes e Depois <button class="cpb" onclick="cpyS(this)">COPIAR</button></div>
 <div class="stx">Ela chegou pra mim [situação antes — ex: trabalhando 6 dias por semana, sem renda extra].
@@ -427,7 +488,7 @@ Depois do curso, em [X meses]: [resultado real com número — ex: agenda própr
 Isso não aconteceu por acidente. Aconteceu porque ela tomou uma decisão e executou.
 
 Se você quer entender como funciona meu curso presencial, comenta [PALAVRA-CHAVE] aqui que eu te chamo no direct.</div></div></div>
-<div class="blk"><div class="btt">Roteiro da Sequência 17K — publica no Dia 5</div>
+<div class="blk"><div class="btt">Roteiro Sequência 17K — publica no Dia 5</div>
 <div class="sg">
 <div class="scard"><div class="snum">01</div><div class="stc"><strong>Gancho</strong><br>"Tenho uma grande novidade. Nunca fiz isso antes."</div><div class="svis">🎥 Fundo preto. Sem foto.</div></div>
 <div class="scard"><div class="snum">02</div><div class="stc"><strong>Contexto</strong><br>"Muita gente pediu vaga. Tenho uma oportunidade que pode mudar sua carreira."</div><div class="svis">🎥 Fundo preto.</div></div>
@@ -455,23 +516,23 @@ function b2(){return`<div class="blk"><div class="btt">Objetivo</div><div class=
 <div class="otw"><table class="otbl">
 <tr><th>Objeção</th><th>Script</th></tr>
 <tr><td>"Sem dinheiro"</td><td><div class="sc" style="margin:0"><div class="sc-lbl">Financeira <button class="cpb" onclick="cpyS(this)">COPIAR</button></div><div class="stx">Oi [nome]! A gente conversou em [mês] sobre o meu curso e você me disse que não era o momento financeiro. Entendo — e fiquei pensando em você. Eu pensei até em uma forma de te ajudar, se o problema ainda for financeiro. Me fala que daí eu te explico como a gente consegue fazer.</div></div></td></tr>
-<tr><td>"Vou falar com o marido"</td><td><div class="sc" style="margin:0"><div class="sc-lbl">Marido <button class="cpb" onclick="cpyS(this)">COPIAR</button></div><div class="stx">Oi [nome]! Lembro que você ia falar com seu marido sobre o curso. Já faz um tempo — vocês chegaram a conversar? Tenho uma nova data abrindo e pensei em você. E se ainda tiver alguma dificuldade, eu pensei em uma forma de te ajudar. Me fala!</div></div></td></tr>
+<tr><td>"Vou falar com o marido"</td><td><div class="sc" style="margin:0"><div class="sc-lbl">Marido <button class="cpb" onclick="cpyS(this)">COPIAR</button></div><div class="stx">Oi [nome]! Lembro que você ia falar com seu marido sobre o curso. Já faz um tempo — vocês chegaram a conversar? Tenho uma nova data abrindo e pensei em você. Me fala como ficou!</div></div></td></tr>
 <tr><td>"Vou pensar"</td><td><div class="sc" style="margin:0"><div class="sc-lbl">Pensando <button class="cpb" onclick="cpyS(this)">COPIAR</button></div><div class="stx">Oi [nome]! A gente conversou lá em [mês] e você disse que ia pensar. Tenho uma nova data abrindo e pensei logo em você. O que te travou na época? Talvez eu consiga te ajudar.</div></div></td></tr>
 <tr><td>Sumiu sem resposta</td><td><div class="sc" style="margin:0"><div class="sc-lbl">Sumiu <button class="cpb" onclick="cpyS(this)">COPIAR</button></div><div class="stx">Oi [nome]! A gente conversou sobre extensão de cílios um tempo atrás. Você chegou a fazer algum curso ou ainda está buscando? Tenho uma nova data aberta — se ainda fizer sentido, me fala que te conto como funciona.</div></div></td></tr>
 </table></div></div>
 <div class="blk"><div class="btt">À tarde — Publicar o Post no Feed</div><div class="tip">Publique o <strong>Post 1</strong> escrito ontem. Prova social com antes e depois. CTA pedindo palavra-chave.</div></div>`;}
 
-function b3(){return`<div class="blk"><div class="btt">Objetivo</div><div class="ob"><strong>Abrir as duas torneiras:</strong> anúncio começa a trazer leads novos e o story único abre as vagas para a call de diagnóstico.</div></div>
+function b3(){return`<div class="blk"><div class="btt">Objetivo</div><div class="ob"><strong>Abrir as duas torneiras:</strong> anúncio começa a trazer leads novos e o story único abre as vagas para a call.</div></div>
 <div class="blk"><div class="btt">Manhã — Subir os Anúncios no Meta Ads</div><ul class="sls">
 <li class="si"><span class="sn">01</span><div class="st">Acesse o <strong>Gerenciador de Anúncios</strong> do Meta</div></li>
 <li class="si"><span class="sn">02</span><div class="st">Crie campanha de <strong>mensagens</strong> com destino para o WhatsApp</div></li>
-<li class="si"><span class="sn">03</span><div class="st">Suba os dois criativos do Dia 1 como variações — o Meta otimiza qual performa melhor</div></li>
+<li class="si"><span class="sn">03</span><div class="st">Suba os dois criativos do Dia 1 como variações</div></li>
 <li class="si"><span class="sn">04</span><div class="st">Budget mínimo: <strong>R$11/dia</strong>. Público: mulheres 20–45, beleza, cílios, sua cidade.</div></li>
 </ul>
-<div class="is"><div class="ii"><span class="iv">R$11</span><div class="id">mínimo/dia<br>~5–6 leads</div></div><div class="ii"><span class="iv">R$30</span><div class="id">bom<br>~14–16 leads</div></div><div class="ii"><span class="iv">R$60</span><div class="id">acelerado<br>~27–32 leads</div></div></div></div>
+<div class="is"><div class="ii"><span class="iv">R$11</span><div class="id">mínimo<br>~5–6 leads</div></div><div class="ii"><span class="iv">R$30</span><div class="id">bom<br>~14–16 leads</div></div><div class="ii"><span class="iv">R$60</span><div class="id">acelerado<br>~27–32 leads</div></div></div></div>
 <div class="blk"><div class="btt">À tarde — Story Único: Vagas para Consultoria</div>
 <div class="ale" style="margin-bottom:8px"><strong>Hoje somente este story.</strong> Nada antes. Nada depois por pelo menos 8h.</div>
-<div class="sc"><div class="sc-lbl">Story Único — Estratégia #28 adaptada <button class="cpb" onclick="cpyS(this)">COPIAR</button></div>
+<div class="sc"><div class="sc-lbl">Story Único — Consultoria Gratuita <button class="cpb" onclick="cpyS(this)">COPIAR</button></div>
 <div class="stx">CONSULTORIA GRATUITA 💎
 Vagas abertas 🚀
 
@@ -484,7 +545,6 @@ Não é aula. É diagnóstico real da sua situação.
 👉 Me manda QUERO aqui no direct agora.
 
 ⚠️ Apenas 5 vagas. Primeiras que chegarem.</div></div>
-<div class="tip" style="margin-top:8px"><strong>Layout:</strong> Foto profissional sua, postura confiante. Texto: "CONSULTORIA GRATUITA 💎" + "VAGAS ABERTAS 🚀". Fundo escuro.</div>
 <div class="sc" style="margin-top:8px"><div class="sc-lbl">Resposta quando alguém mandar "QUERO" <button class="cpb" onclick="cpyS(this)">COPIAR</button></div>
 <div class="stx">Oi [nome]! Que ótimo que você se interessou.
 
@@ -497,14 +557,13 @@ function b4(){return`<div class="blk"><div class="btt">Objetivo</div><div class=
 <div class="fwss">
 <div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">1</span><span class="fwt">Quebra-Gelo</span><span class="fwti">2–3 min</span></div><div class="fwb">Algo pessoal e descontraído. <em>"Oi! Como você tá?"</em> Quebra a tensão inicial.</div></div>
 <div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">2</span><span class="fwt">Explicar a conversa</span><span class="fwti">1 min</span></div><div class="fwb"><em>"Primeiro vou entender onde você está, depois te mostro o melhor caminho. Se fizer sentido, explico como funciona meu curso."</em></div></div>
-<div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">3</span><span class="fwt">Diagnóstico Profundo</span><span class="fwti">10–15 min</span></div><div class="fwb"><strong>Perguntas:</strong><br>• <em>"Há quanto tempo você atua com cílios?"</em><br>• <em>"Qual é o maior desafio hoje?"</em><br>• <em>"Como está seu faturamento?"</em><br>• <em>"Você se sentiu preparada após o último curso?"</em><br>Ouça mais do que fala. Aprofunde cada resposta.</div></div>
-<div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">4</span><span class="fwt">Apresentar a Solução</span><span class="fwti">5–8 min</span></div><div class="fwb"><em>"Baseado no que você me falou, você precisa de [prob 1], [prob 2] e [prob 3]. Faz sentido?"</em><br>Aguarde confirmação antes de continuar.</div></div>
-<div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">5</span><span class="fwt">Oferta — sempre do mais caro</span><span class="fwti">3–5 min</span></div><div class="fwb"><em>"O valor é R$[valor]. Você prefere à vista no Pix ou parcelado no cartão?"</em><br><strong>Depois do preço: FIQUE QUIETA.</strong> Quem fala primeiro, perde.</div></div>
+<div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">3</span><span class="fwt">Diagnóstico Profundo</span><span class="fwti">10–15 min</span></div><div class="fwb"><strong>Perguntas:</strong><br>• <em>"Há quanto tempo você atua com cílios?"</em><br>• <em>"Qual é o maior desafio hoje?"</em><br>• <em>"Como está seu faturamento?"</em><br>Ouça mais do que fala.</div></div>
+<div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">4</span><span class="fwt">Apresentar a Solução</span><span class="fwti">5–8 min</span></div><div class="fwb"><em>"Baseado no que você me falou, você precisa de [prob 1], [prob 2] e [prob 3]. Faz sentido?"</em> Aguarde confirmação antes de continuar.</div></div>
+<div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">5</span><span class="fwt">Oferta — sempre do mais caro</span><span class="fwti">3–5 min</span></div><div class="fwb"><em>"O valor é R$[valor]. Você prefere à vista no Pix ou parcelado no cartão?"</em><br><strong>Depois do preço: FIQUE QUIETA.</strong></div></div>
 <div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">6</span><span class="fwt">Objeções + Consórcio</span><span class="fwti">conforme necessário</span></div><div class="fwb">
 <strong>Sem dinheiro:</strong> <em>"Você tem cartão? Às vezes dá pra parcelar."</em><br>
 <strong>Sem cartão — consórcio:</strong> <em>"Tenho uma forma que outras alunas usaram: você entra num consórcio, paga uma parcela menor agora e garante a vaga. A gente começa com um sinal hoje."</em><br>
-<strong>⚠️ Ela sai com pelo menos um sinal pago.</strong><br>
-<strong>"Preciso pensar":</strong> <em>"O que exatamente? Se é sobre o valor, qual parte não ficou clara?"</em>
+<strong>⚠️ Ela sai com pelo menos um sinal pago.</strong>
 </div></div>
 </div></div>
 <div class="blk"><div class="btt">À noite — Divulgar a Live</div>
@@ -512,7 +571,7 @@ function b4(){return`<div class="blk"><div class="btt">Objetivo</div><div class=
 <div class="stx">AO VIVO AMANHÃ 🔴
 [Horário] aqui no Instagram
 
-Vou falar sobre [tema — ex: como montar uma agenda cheia de clientes de cílios mesmo começando do zero].
+Vou falar sobre [tema].
 
 Não vai ficar gravado. Só quem estiver ao vivo vai ter acesso.
 
@@ -521,7 +580,7 @@ Não vai ficar gravado. Só quem estiver ao vivo vai ter acesso.
 function b5(){return`<div class="blk"><div class="btt">Objetivo</div><div class="ob"><strong>Ativar a audiência orgânica com a sequência 17K.</strong> Hoje só a sequência. Nada concorrendo.</div></div>
 <div class="blk"><div class="btt">Regra absoluta do dia</div><div class="ale"><strong>Hoje SOMENTE a sequência.</strong> Nenhum post no feed. Nenhum outro story antes ou depois por pelo menos 8h.</div></div>
 <div class="blk"><div class="btt">Sequência 17K — Adaptada para Curso Presencial</div>
-<div class="tip" style="margin-bottom:8px"><strong>Fundo preto, texto centralizado, sem foto</strong> — é o formato correto. O poder está no texto.</div>
+<div class="tip" style="margin-bottom:8px"><strong>Fundo preto, texto centralizado, sem foto.</strong> O poder está no texto.</div>
 <div class="sg">
 <div class="scard"><div class="snum">01</div><div class="stc"><strong>Gancho</strong><br>"Tenho uma grande novidade. Estava preparando uma surpresa. Eu nunca fiz isso antes."</div><div class="svis">🎥 Fundo preto. Sem foto.</div></div>
 <div class="scard"><div class="snum">02</div><div class="stc"><strong>Contexto</strong><br>"Muita gente veio no meu direct pedindo vaga. Tenho uma oportunidade que pode mudar sua carreira."</div><div class="svis">🎥 Fundo preto.</div></div>
@@ -546,10 +605,10 @@ function b6(){return`<div class="blk"><div class="btt">Objetivo</div><div class=
 </ul></div>
 <div class="blk"><div class="btt">Roteiro da Live — 20 a 30 min</div>
 <div class="fwss">
-<div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">1</span><span class="fwt">Abertura e Aquecimento</span><span class="fwti">2–3 min</span></div><div class="fwb">Peça para comentar de onde são. Isso anima o chat.</div></div>
+<div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">1</span><span class="fwt">Abertura</span><span class="fwti">2–3 min</span></div><div class="fwb">Peça para comentar de onde são. Isso anima o chat.</div></div>
 <div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">2</span><span class="fwt">Pergunta de identificação</span><span class="fwti">2 min</span></div><div class="fwb"><em>"Você já pensou em trabalhar com cílios mas ainda não deu o passo? Comenta SIM ou NÃO."</em></div></div>
 <div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">3</span><span class="fwt">Conteúdo Principal</span><span class="fwti">15–20 min</span></div><div class="fwb"><strong>Tema:</strong> "3 coisas que minhas alunas aprenderam no curso que mudaram suas carreiras"<br>Fale sobre resultados e bastidores. Intercale com perguntas para o chat.</div></div>
-<div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">4</span><span class="fwt">Case real com números</span><span class="fwti">3–5 min</span></div><div class="fwb">Quanto ela ganhava antes, o que mudou, em quanto tempo viu resultado. Seja específica.</div></div>
+<div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">4</span><span class="fwt">Case real com números</span><span class="fwti">3–5 min</span></div><div class="fwb">Quanto ela ganhava antes, o que mudou, em quanto tempo viu resultado.</div></div>
 <div class="fws"><div class="fwh" onclick="tfw(this)"><span class="fwn">5</span><span class="fwt">CTA Final — Palavra-Chave no Chat</span><span class="fwti">2–3 min</span></div><div class="fwb"><em>"Se fez sentido, comenta aqui [PALAVRA-CHAVE]. Vou tirar print e chamar cada uma de vocês no Instagram."</em><br><br><strong>Após a live:</strong> print de quem comentou → busca no Instagram → chama no direct.<br><strong>Não fale preço na live.</strong></div></div>
 </div></div>
 <div class="blk"><div class="btt">Mensagem para quem comentou</div>
@@ -567,8 +626,8 @@ function b7(){return`<div class="blk"><div class="btt">Objetivo</div><div class=
 <div class="scard"><div class="snum">01</div><div class="stc"><strong>Identificação</strong><br>"Tem gente que sente lá no fundo: <strong>'Eu nasci pra viver bem. Pra ser dona do meu tempo.'</strong> Mas por algum motivo… ainda não escolheu o caminho."</div><div class="svis">🎥 Fundo preto. Sem foto.</div></div>
 <div class="scard"><div class="snum">02</div><div class="stc"><strong>Reconhecimento</strong><br>"Talvez porque nunca te mostraram uma opção que tivesse a ver com o seu estilo, com o que você acredita, com a vida que quer construir."</div><div class="svis">🎥 Fundo preto.</div></div>
 <div class="scard"><div class="snum">03</div><div class="stc"><strong>Abertura</strong><br>"Mas e se eu te mostrasse que o universo dos cílios pode ser exatamente esse caminho? E que você pode começar com classe, técnica e visão?"</div><div class="svis">🎥 Fundo preto.</div></div>
-<div class="scard"><div class="snum">04</div><div class="stc"><strong>Filtro + CTA</strong><br>"Se você sente que esse papo é com você, e que só falta o empurrão certo… comenta aqui <strong>'minha hora'</strong> 💬"</div><div class="svis">🎥 Emoji clicável em destaque.</div></div>
-<div class="scard"><div class="snum">05</div><div class="stc"><strong>Emoji interativo</strong><br>Texto: <strong>"minha hora 💬"</strong><br>Emoji grande clicável: 💬<br>Quem clicar → aborde imediatamente.</div><div class="svis">🎥 Fundo preto. Emoji centralizado.</div></div>
+<div class="scard"><div class="snum">04</div><div class="stc"><strong>Filtro + CTA</strong><br>"Se você sente que esse papo é com você, e que só falta o empurrão certo… comenta aqui <strong>'minha hora'</strong> 💬"</div><div class="svis">🎥 Emoji clicável.</div></div>
+<div class="scard"><div class="snum">05</div><div class="stc"><strong>Emoji interativo</strong><br>Texto: <strong>"minha hora 💬"</strong><br>Emoji grande clicável: 💬<br>Quem clicar → aborde imediatamente.</div><div class="svis">🎥 Fundo preto.</div></div>
 </div>
 <div class="g8"></div>
 <div class="sc"><div class="sc-lbl">Abordagem para quem comentou "minha hora" <button class="cpb" onclick="cpyS(this)">COPIAR</button></div>
@@ -578,7 +637,7 @@ Inclusive, vi no seu perfil que você tem uma energia muito de quem nasceu pra b
 
 Me conta: o que tá te impedindo de dar esse passo agora?</div></div></div>
 <div class="blk"><div class="btt">Post no Feed — Carrossel Diagnóstico</div>
-<div class="sc"><div class="sc-lbl">Post 2 — Carrossel Diagnóstico · slide a slide <button class="cpb" onclick="cpyS(this)">COPIAR</button></div>
+<div class="sc"><div class="sc-lbl">Post 2 — Carrossel Diagnóstico <button class="cpb" onclick="cpyS(this)">COPIAR</button></div>
 <div class="stx">CAPA: Eu achava que o [PROBLEMA] era falta de tempo, até perceber que o que me faltava era [RESULTADO]
 
 SLIDE 1: Durante meses eu dizia que não conseguia crescer como lash designer porque "não tinha tempo". Mas o tempo nunca foi o vilão. Era só a desculpa mais fácil.
@@ -609,6 +668,10 @@ O que está te faltando para tomar essa decisão? Me fala que quero te ajudar a 
 <div class="g8"></div>
 <div class="tip"><strong>Esses números são o seu case.</strong> Leve para o grupo da mentoria.</div>
 </div>`;}
+
+// ── INIT ──────────────────────────────────────────────────────
+// Firebase is already loaded via CDN — go straight to login
+show('s-login');
 </script>
 </body>
 </html>
